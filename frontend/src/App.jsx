@@ -8,6 +8,7 @@ import SignUpPage from "./pages/SignUpPage";
 import NotFound from "./pages/NotFound";
 
 import Sidebar from "./components/Sidebar";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/likes" element={<LikesPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <Toaster />
         </div>
       </div>
     </>

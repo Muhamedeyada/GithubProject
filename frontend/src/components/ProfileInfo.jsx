@@ -8,23 +8,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { TfiThought } from "react-icons/tfi";
 import { FaEye } from "react-icons/fa";
 
-const ProfileInfo = () => {
-  const userProfile = {
-    avatar_url:
-      "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745",
-    bio: "👨🏻‍💻👨🏻‍💻👨🏻‍💻",
-    email: "johndoe@gmail.com",
-    followers: 100,
-    following: 200,
-    html_url: "https://github.com/Muhamedeyada",
-    location: "Somewhere, Earth",
-    name: "John Doe",
-    public_gists: 100,
-    public_repos: 100,
-    twitter_username: "johndoe",
-    login: "johndoe",
-  };
-
+const ProfileInfo = ({ userProfile }) => {
   return (
     <div className="lg:w-1/3 w-full flex flex-col gap-2 md:sticky md:top-10">
       <div className="bg-glass rounded-lg p-4">
